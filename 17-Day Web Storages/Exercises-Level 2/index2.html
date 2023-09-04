@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let student1 = {
+        firstName: "Ahsen",
+        lastName: "Tetik",
+        age: 22,
+        skills: ["HTML", "CSS", "Javascript"],
+        country: 'Türkiye',
+        enrolled: true,
+    }
+    
+    let txt = JSON.stringify(student1);
+    
+    // localStorage'ın doğru bir şekilde kullanıldığından ve yazım hatası olmadığından emin olun
+    localStorage.setItem('student1', txt);
+    
+    // localStorage'ın içeriğini görmek için konsola yazdırabilirsiniz
+    console.log(localStorage);</script>
+</body>
+</html>
