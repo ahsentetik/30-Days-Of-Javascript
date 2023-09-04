@@ -41,4 +41,7 @@ personAccount.addExpense(300);
 
 
 
-console.log(personAccount.accountInfo());
+
+let text = JSON.stringify(personAccount.accountInfo());
+localStorage.setItem("personAccount", text);
+console.log(localStorage);
