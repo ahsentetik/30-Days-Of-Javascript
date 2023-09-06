@@ -7,3 +7,4 @@ fetch(catsAPI)
         console.log(catsName);
     })
     .catch(error => console.error("Error", error));
+
