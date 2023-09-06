@@ -38,4 +38,17 @@ getAverageWeight()
   
 //countriesAPI'sini okuyun ve en büyük(largest) 10 ülkeyi bulun.
 
+fetch(countriesAPI)
+  .then(response => response.json())
+  .then(data => {
+    
+    data.sort((a, b) => b.population - a.population);
+    const top10Countries = data.slice(0, 10);
+
+    console.log('En büyük 10 ülke:');
+    top10Countries.forEach((country, index) => {
+      console.log(`${index + 1}. ${country.name} - Nüfus: ${country.population}`);
+    });
+  })
+  
 //countriesAPI'sini okuyun ve dünyada resmi olarak kullanılan toplam dil sayısını bulun.
