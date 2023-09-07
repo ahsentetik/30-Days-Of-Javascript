@@ -52,3 +52,13 @@ fetch(countriesAPI)
   })
   
 //countriesAPI'sini okuyun ve dünyada resmi olarak kullanılan toplam dil sayısını bulun.
+fetch(countriesAPI)
+  .then(response => response.json())
+  .then(data => {
+    let totalLanguages = 0;
+    data.forEach((country) => {
+      totalLanguages += country.languages.length;
+    });
+
+    console.log(totalLanguages);
+  });
