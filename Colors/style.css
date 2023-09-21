@@ -1,0 +1,21 @@
+
+.container{
+    border: 10px solid black;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+}
+.button{
+    height: 50px;
+    width: 500px;
+    color: black;
+    font-size: xx-large;
+    font-style: italic;
+    background-color: bisque;
+    border-radius: 30px;
+    border: 6px solid black;
+}
+.text{
+  margin-top: 40px;
+}

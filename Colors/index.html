@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <div class="container">
+      
+        <button onclick="changeColor()" type="button" class="button">Click Me</button>
+</div>
+</div>
+    <script>
+        function changeColor() {
+            let alphanums = '0123456789abcdef';
+            let colorArr = [];
+            
+            for(let i = 0; i < 6; i++) {
+                let index = Math.floor(Math.random() * 16); // Use 16 instead of 15 for valid hexadecimal index
+                colorArr.push(alphanums[index]);
+            }
+            
+            // Get a random color in hexadecimal format
+            let randomColor = '#' + colorArr.join('');
+            
+            // Change the background color of the container
+            document.querySelector('.container').style.backgroundColor = randomColor;
+        }
+    </script>
+</body>
+</html>
