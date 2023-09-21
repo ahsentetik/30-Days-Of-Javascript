@@ -70,11 +70,13 @@ let getDate = () => {
   let listItems = document.querySelectorAll('li');
 }
 
-      
+      const todoList=document.getElementById("todoList"); //Kenardaki noktaları silmek için listStyleType kullanıldı
+      todoList.style.listStyleType ='none';
+
+
     
     function challengeBackgroundColors() {
         const challengeItems = document.querySelectorAll('li');
-       
         challengeItems.forEach(item => {
           if (item.textContent.includes('Done')) {
             item.style.backgroundColor = 'green'; 
