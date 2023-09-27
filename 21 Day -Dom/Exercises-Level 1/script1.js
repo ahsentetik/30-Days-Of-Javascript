@@ -39,6 +39,7 @@ const ids = ['paragraph-1', 'paragraph-2', 'paragraph-3', 'paragraph-4'];
 const className = 'paragraph-class';
 
 
+
 for (let i = 0; i < paragraphs.length; i++) {
     paragraphs[i].id = ids[i];
     paragraphs[i].classList.add(className);
